@@ -1,11 +1,19 @@
 package gross_calculator;
 
+import java.util.Scanner;
+
 public class GrossPayCalculator {
 
     public static void main (String[] args){
-        int hours = 40;
+        int hours = 0;
+        System.out.println("How many hours did you work?");
 
-        double payRate = 25.50;
+        Scanner scanner = new Scanner(System.in);
+        hours = scanner.nextInt();
+
+        double payRate = 0;
+        System.out.println("What is your pay rate?");
+        payRate = scanner.nextDouble();
 
         double grossPay = hours * payRate;
 
